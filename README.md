@@ -14,6 +14,7 @@ This is a pack of smoothswing soundfonts I made based on characters from Jedi: S
 - Second Sister
 - Dagan Gera
     - Light and dark versions
+- Rick's Stun Baton
 - Cere Junda
 - Darth Vader
 - Bode Akuna
