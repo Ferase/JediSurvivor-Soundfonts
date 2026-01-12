@@ -1,0 +1,43 @@
+/* copyright Fett263 CustomBlade (Quillion / Secondary Blade) OS7 Style
+https://www.fett263.com/fett263-proffieOS7-style-library.html#CustomBlade
+OS7.15 v3.213p
+Single Style
+Multi Phase (Special Abilities*) Transition: Wipe, Time: 200
+
+Default: Cal Kestis Survivor Blue [Rgb<0,42,255>]
+1: Cal Kestis Survivor Green [Rgb<0,255,0>]
+2: Cal Kestis Survivor Purple [Rgb<174,0,255>]
+3: Cal Kestis Survivor Yellow [Rgb<255,234,0>]
+4: Cal Kestis Survivor Cyan [Rgb<0,213,255>]
+5: Cal Kestis Survivor Magenta [Rgb<255,0,208>]
+6: Cal Kestis Survivor Indigo [Rgb<84,61,255>]
+7: Cal Kestis Survivor Orange [Rgb<255,98,0>]
+8: Cal Kestis Survivor Red [Rgb<255,2,2>]
+9: Cal Kestis Survivor Silver [Rgb<200,225,234>]
+
+Multi Phase Control: use Special Abilities controls to change Phase. Requires Alt Font.
+
+*This style REQUIRES Alt Fonts alt000/ to alt009/ to be set up. Uses altchng.wav on change.
+See https://pod.hubbe.net/sound/alt_sounds.html for more information.
+--Effects Included--
+Ignition Effect: Standard Ignition [Color: IgnitionColorArg]
+Retraction Effect: Standard Retraction [Color: RetractionColorArg]
+Lockup Effect: NoneLightning Block Effect: NoneDrag Effect:
+0: sideDragMulti0Shape - Begin: Wipe In - Style: Intensity Sparking Drag - End: Wipe Out
+[Color: DragColorArg]
+Melt Effect:
+0: sideMeltMulti0Shape - Begin: Wipe In - Style: Intensity Melt - End: Wipe Out
+[Color: StabColorArg]
+Interactive Blast: Continuing Blasts - Default Level (Uses Style Option 2 for Editing): 500 ms
+Interactive Blast control requires blast.wav files in font. When Blast is triggered blast.wav will play, to deflect blast (blst.wav and visual effect) swing within 500ms of blaster sound ending. Each deflection will be followed by new blaster sound, if no deflection blaster sound will end. Only one style per preset can contain.
+Special Ability 1: Previous Phase
+Special Ability 2: Next Phase
+Special Ability 3: Previous Phase
+Special Ability 4: Next Phase
+Special Ability 5: Ignite + Previous Phase
+Special Ability 6: Ignite + Next Phase
+Special Ability 7: Ignite + Previous Phase
+Special Ability 8: Ignite + Next Phase
+
+*/
+StylePtr<Layers<Black,ColorSelect<AltF,TrSelect<Ifon<Int<1>,Int<0>>,TrInstant,TrWipeX<Int<200>>>,StripesX<Scale<HoldPeakF<Sum<EffectPulseF<EFFECT_IGNITION>,EffectPulseF<EFFECT_ALT_SOUND>>,Int<3000>,Int<3000>>,Int<8000>,Int<3000>>,Scale<HoldPeakF<Sum<EffectPulseF<EFFECT_IGNITION>,EffectPulseF<EFFECT_ALT_SOUND>>,Int<3000>,Int<3000>>,Int<-2600>,Int<-3600>>,Rgb<0,42,255>,Mix<Int<12000>,Black,Rgb<0,42,255>>,Pulsing<Rgb<0,42,255>,Mix<Int<8000>,Black,Rgb<0,42,255>>,1400>>,StripesX<Scale<HoldPeakF<Sum<EffectPulseF<EFFECT_IGNITION>,EffectPulseF<EFFECT_ALT_SOUND>>,Int<3000>,Int<3000>>,Int<4000>,Int<1800>>,Scale<HoldPeakF<Sum<EffectPulseF<EFFECT_IGNITION>,EffectPulseF<EFFECT_ALT_SOUND>>,Int<2000>,Int<4000>>,Int<-2800>,Int<-4000>>,Mix<Int<16000>,Black,Rgb<0,255,0>>,Mix<Sin<Int<20>,Int<22000>,Int<32768>>,Black,Rgb<0,255,0>>,Mix<Int<8000>,Black,Rgb<0,255,0>>>,StripesX<Scale<HoldPeakF<Sum<EffectPulseF<EFFECT_IGNITION>,EffectPulseF<EFFECT_ALT_SOUND>>,Int<3000>,Int<3000>>,Sin<Int<20>,Int<10000>,Int<7000>>,Int<3000>>,Scale<HoldPeakF<Sum<EffectPulseF<EFFECT_IGNITION>,EffectPulseF<EFFECT_ALT_SOUND>>,Int<2000>,Int<4000>>,Int<-2300>,Int<-4000>>,Rgb<174,0,255>,Mix<Int<12000>,Black,Rgb<174,0,255>>,Pulsing<Rgb<174,0,255>,Mix<Int<20000>,Black,Rgb<174,0,255>>,2000>>,StripesX<Scale<HoldPeakF<Sum<EffectPulseF<EFFECT_IGNITION>,EffectPulseF<EFFECT_ALT_SOUND>>,Int<3000>,Int<3000>>,Int<3600>,Int<1600>>,Scale<HoldPeakF<Sum<EffectPulseF<EFFECT_IGNITION>,EffectPulseF<EFFECT_ALT_SOUND>>,Int<2000>,Int<4000>>,Int<-2700>,Int<-4100>>,Mix<Int<16000>,Black,Rgb<255,234,0>>,Mix<Sin<Int<20>,Int<22000>,Int<32768>>,Black,Rgb<255,234,0>>,Mix<Int<8000>,Black,Rgb<255,234,0>>>,StripesX<Scale<HoldPeakF<Sum<EffectPulseF<EFFECT_IGNITION>,EffectPulseF<EFFECT_ALT_SOUND>>,Int<3000>,Int<3000>>,Int<10000>,Int<5000>>,Scale<HoldPeakF<Sum<EffectPulseF<EFFECT_IGNITION>,EffectPulseF<EFFECT_ALT_SOUND>>,Int<3000>,Int<3000>>,Int<-2000>,Int<-3000>>,Rgb<0,213,255>,Mix<Int<12000>,Black,Rgb<0,213,255>>,Pulsing<Rgb<0,213,255>,Mix<Int<8000>,Black,Rgb<0,213,255>>,1400>>,StripesX<Scale<HoldPeakF<Sum<EffectPulseF<EFFECT_IGNITION>,EffectPulseF<EFFECT_ALT_SOUND>>,Int<3000>,Int<3000>>,Int<9000>,Int<4000>>,Scale<HoldPeakF<Sum<EffectPulseF<EFFECT_IGNITION>,EffectPulseF<EFFECT_ALT_SOUND>>,Int<3000>,Int<3000>>,Int<-2000>,Int<-3000>>,Rgb<255,0,208>,Mix<Int<12000>,Black,Rgb<255,0,208>>,Pulsing<Rgb<255,0,208>,Mix<Int<8000>,Black,Rgb<255,0,208>>,800>>,StripesX<Scale<HoldPeakF<Sum<EffectPulseF<EFFECT_IGNITION>,EffectPulseF<EFFECT_ALT_SOUND>>,Int<3000>,Int<3000>>,Int<9000>,Int<4000>>,Scale<HoldPeakF<Sum<EffectPulseF<EFFECT_IGNITION>,EffectPulseF<EFFECT_ALT_SOUND>>,Int<3000>,Int<3000>>,Int<-2400>,Int<-3000>>,Rgb<84,61,255>,Mix<Int<15000>,Black,Rgb<84,61,255>>,Pulsing<Rgb<84,61,255>,Mix<Int<10000>,Black,Rgb<84,61,255>>,600>>,StripesX<Scale<HoldPeakF<Sum<EffectPulseF<EFFECT_IGNITION>,EffectPulseF<EFFECT_ALT_SOUND>>,Int<3000>,Int<3000>>,Int<4000>,Int<1800>>,Scale<HoldPeakF<Sum<EffectPulseF<EFFECT_IGNITION>,EffectPulseF<EFFECT_ALT_SOUND>>,Int<2000>,Int<4000>>,Int<-2800>,Int<-4000>>,Mix<Int<16000>,Black,Rgb<255,98,0>>,Mix<Sin<Int<20>,Int<20000>,Int<32768>>,Black,Rgb<255,98,0>>,Mix<Int<10000>,Black,Rgb<255,98,0>>>,StripesX<Scale<HoldPeakF<Sum<EffectPulseF<EFFECT_IGNITION>,EffectPulseF<EFFECT_ALT_SOUND>>,Int<3000>,Int<2000>>,Int<6000>,Int<2000>>,Scale<HoldPeakF<Sum<EffectPulseF<EFFECT_IGNITION>,EffectPulseF<EFFECT_ALT_SOUND>>,Int<3000>,Int<4000>>,Int<-2600>,Int<-3600>>,Rgb<255,2,2>,Mix<Int<12000>,Black,Rgb<255,2,2>>,Pulsing<Rgb<255,2,2>,Mix<Int<8000>,Black,Rgb<255,2,2>>,1000>>,StripesX<Scale<HoldPeakF<Sum<EffectPulseF<EFFECT_IGNITION>,EffectPulseF<EFFECT_ALT_SOUND>>,Int<3000>,Int<3000>>,Int<4000>,Int<1800>>,Scale<HoldPeakF<Sum<EffectPulseF<EFFECT_IGNITION>,EffectPulseF<EFFECT_ALT_SOUND>>,Int<2000>,Int<4000>>,Int<-3000>,Int<-4500>>,Mix<Int<16000>,Black,Rgb<200,225,234>>,Mix<Sin<Int<20>,Int<22000>,Int<32768>>,Black,Rgb<200,225,234>>,Mix<Int<8000>,Black,Rgb<200,225,234>>>>,LockupTrL<AlphaL<TransitionEffect<RandomPerLEDFlickerL<RgbArg<DRAG_COLOR_ARG,Rgb<255,255,255>>>,BrownNoiseFlickerL<RgbArg<DRAG_COLOR_ARG,Rgb<255,255,255>>,Int<300>>,TrExtend<4000,TrInstant>,TrFade<4000>,EFFECT_DRAG_BEGIN>,SmoothStep<Scale<TwistAngle<>,IntArg<DRAG_SIZE_ARG,31000>,Int<30000>>,Int<3000>>>,TrWipeIn<200>,TrWipe<200>,SaberBase::LOCKUP_DRAG,Int<1>>,LockupTrL<AlphaL<Stripes<2000,4000,Mix<TwistAngle<>,RgbArg<STAB_COLOR_ARG,Rgb<255,68,0>>,RotateColorsX<Int<3000>,RgbArg<STAB_COLOR_ARG,Rgb<255,68,0>>>>,Mix<Sin<Int<50>>,Black,Mix<TwistAngle<>,RgbArg<STAB_COLOR_ARG,Rgb<255,68,0>>,RotateColorsX<Int<3000>,RgbArg<STAB_COLOR_ARG,Rgb<255,68,0>>>>>,Mix<Int<4096>,Black,Mix<TwistAngle<>,RgbArg<STAB_COLOR_ARG,Rgb<255,68,0>>,RotateColorsX<Int<3000>,RgbArg<STAB_COLOR_ARG,Rgb<255,68,0>>>>>>,SmoothStep<Scale<TwistAngle<>,IntArg<MELT_SIZE_ARG,26000>,Int<30000>>,Int<3000>>>,TrConcat<TrExtend<4000,TrWipeIn<200>>,AlphaL<HumpFlicker<Mix<TwistAngle<>,RgbArg<STAB_COLOR_ARG,Rgb<255,68,0>>,RotateColorsX<Int<3000>,RgbArg<STAB_COLOR_ARG,Rgb<255,68,0>>>>,RotateColorsX<Int<3000>,Mix<TwistAngle<>,RgbArg<STAB_COLOR_ARG,Rgb<255,68,0>>,RotateColorsX<Int<3000>,RgbArg<STAB_COLOR_ARG,Rgb<255,68,0>>>>>,100>,SmoothStep<Scale<TwistAngle<>,IntArg<MELT_SIZE_ARG,26000>,Int<30000>>,Int<3000>>>,TrFade<4000>>,TrWipe<200>,SaberBase::LOCKUP_MELT,Int<1>>,InOutTrL<TrWipeX<BendTimePowInvX<IgnitionTime<300>,Mult<IntArg<IGNITION_OPTION2_ARG,10992>,Int<98304>>>>,TrWipeInX<BendTimePowX<RetractionTime<0>,Mult<IntArg<RETRACTION_OPTION2_ARG,10992>,Int<98304>>>>,Black>,TransitionEffectL<TrConcat<TrDelay<10>,Black,TrWipeSparkTipX<RgbArg<IGNITION_COLOR_ARG,Rgb<255,255,255>>,Int<300>>>,EFFECT_USER5>,TransitionEffectL<TrConcat<TrInstant,Black,TrWipeSparkTipX<RgbArg<IGNITION_COLOR_ARG,Rgb<255,255,255>>,Int<300>>>,EFFECT_USER6>,TransitionEffectL<TrConcat<TrDelay<10>,Black,TrWipeSparkTipX<RgbArg<IGNITION_COLOR_ARG,Rgb<255,255,255>>,Int<300>>>,EFFECT_USER7>,TransitionEffectL<TrConcat<TrInstant,Black,TrWipeSparkTipX<RgbArg<IGNITION_COLOR_ARG,Rgb<255,255,255>>,Int<300>>>,EFFECT_USER8>>>(),

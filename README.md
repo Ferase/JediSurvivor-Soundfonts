@@ -21,6 +21,10 @@ This is a pack of smoothswing soundfonts I made based on characters from Jedi: S
 
 ## Blade Styles
 
+Updated ProffieOS Blade Styles are included in the `/Blade Styles/` directory of their repective soundfonts. They're based on Fett263's Survivor styles and were hand tweaked by [crazy.hair](https://github.com/crazy-hair). More information and instructions on how to set them up can be found in the readme.md file in the `/Blade Styles/` directory. Only the Multi-Phase/Alt Font styles are included, as the other blade styles are trivial to download from the Fett263 [Style Library configurator](https://www.fett263.com/fett263-proffieOS7-style-library.html).
+
+The previous soundfonts can be found here:
+
 ### Credit to [u/Sword-Logic](https://www.reddit.com/user/Sword-Logic/) on Reddit
 
 On the [Reddit post](https://www.reddit.com/r/lightsabers/comments/1709h78/jedi_survivor_soundfont_pack_v2_proffie_xenopixel/), u/Sword-Logic graciously shared some blade styles they made for these soundfonts in [this comment](https://www.reddit.com/r/lightsabers/comments/1709h78/comment/kcyli9r/?utm_source=share&utm_medium=web2x&context=3)! Thank you so much for allowing me to link these!!
