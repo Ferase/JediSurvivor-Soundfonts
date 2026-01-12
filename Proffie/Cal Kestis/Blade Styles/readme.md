@@ -1,6 +1,8 @@
 These blade styles take advantage of Fett263's Multi-Phase blade to combine all the soundfonts and colors into one preset. They require the [Alt Font](https://pod.hubbe.net/sound/alt_sounds.html) setup and [Fett263's prop file](https://www.fett263.com/proffieOS7-fett263-prop-file.html) to be active on your Proffie saber with the `FETT263_SPECIAL_ABILITIES` define in your config.
 If you don't know what that means, you probably don't have it enabled on your saber.
 
+You can find a pre-configured Alt Font soundfont directory in the main Cal Kestis folder. You use it as you would any other soundfont.
+
 Included are 4 different styles, 3 for the main blade and 1 for the crossguard quillions. The three main styles are the same, except for the different Interactive Blast configurations.
 
 The base styles are Fett263's Cal Kestis Survivor styles, with updated colors I extracted from the game and hand-tweaked for better accuracy.
@@ -13,4 +15,4 @@ To cycle between the different colors/fonts, you just need to hold down the powe
 
 `cal_kestis_survivor_quillion` is for the crossguard quillions, the color change function will not work without the main blade style enabled in the same preset.
 
-All the blade styles were created in Fett263's [Style Library configurator](https://www.fett263.com/fett263-proffieOS7-style-library.html) and all copyright information is preserved in the comments of the blade style.
+All the blade styles were created in Fett263's [Style Library configurator](https://www.fett263.com/fett263-proffieOS7-style-library.html) and all copyright information is preserved in the comments of the blade style. They were designed for ProffieOS 7.15, and may not work on older versions.
