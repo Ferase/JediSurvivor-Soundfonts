@@ -13,6 +13,8 @@ To cycle between the different colors/fonts, you just need to hold down the powe
 
 `cal_kestis_survivor_single_interactive_blast` and `cal_kestis_survivor_continuing_interactive_blast` require `blast.wav` in the soundfont directory in addition to the `blst.wav` files, as well as the `EFFECT_INTERACTIVE_BLAST` define in your config. You can find more information about Interactive Blast [here.](https://www.fett263.com/proffieOS7-intro.html#blast)
 
+These blades have alternate `party_mode` styles, which include an option to toggle swings changing the style/font of the blade, as seen in the game. This option is toggled by special ability 3 and 4 (refer to the prop file to see the bindings for special abilities).
+
 `cal_kestis_survivor_quillion` is for the crossguard quillions, the color change function will not work without the main blade style enabled in the same preset.
 
 All the blade styles were created in Fett263's [Style Library configurator](https://www.fett263.com/fett263-proffieOS7-style-library.html) and all copyright information is preserved in the comments of the blade style. They were designed for ProffieOS 7.15, and may not work on older versions.
