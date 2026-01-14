@@ -23,7 +23,7 @@ This is a pack of smoothswing soundfonts I made based on characters from Jedi: S
 
 Updated ProffieOS Blade Styles are included in the `/Blade Styles/` directory of their repective soundfonts. They're based on Fett263's Survivor styles and were hand tweaked by [crazy.hair](https://github.com/crazy-hair). More information and instructions on how to set them up can be found in the readme.md file in the `/Blade Styles/` directory. Only the Multi-Phase/Alt Font styles are included, as the other blade styles are trivial to download from the Fett263 [Style Library configurator](https://www.fett263.com/fett263-proffieOS7-style-library.html).
 
-The previous soundfonts can be found here:
+The previous blade styles can be found here:
 
 ### Credit to [u/Sword-Logic](https://www.reddit.com/user/Sword-Logic/) on Reddit
 
