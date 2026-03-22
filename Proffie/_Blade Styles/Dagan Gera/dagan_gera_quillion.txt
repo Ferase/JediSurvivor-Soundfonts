@@ -1,0 +1,31 @@
+StylePtr</* copyright Fett263 CustomBlade (Quillion / Secondary Blade) OS7 Style
+https://www.fett263.com/fett263-proffieOS7-style-library.html#CustomBlade
+OS7.15 v3.217p
+Single Style
+Multi Phase (Special Abilities*) Transition: Smooth Fade, Time: 200
+
+Default: Power Wave Erratic [BaseColorArg]
+1: The Twins: Am [AltColorArg]
+
+Multi Phase Control: use Special Abilities controls to change Phase. Requires Alt Font.
+
+*This style REQUIRES Alt Fonts alt000/ to alt001/ to be set up. Uses altchng.wav on change.
+See https://pod.hubbe.net/sound/alt_sounds.html for more information.
+--Effects Included--
+
+Effect Reaction: HumpFlicker, AltColor2Arg, Type: Emitter, Direction: Normal, Duration: 200, Consecutive Effects to Max: 6
+Effect Reactions: Clash, BlastIgnition Effect: Standard Ignition [Color: IgnitionColorArg]
+PowerUp Effect: Power Flash [Color: IgnitionColorArg]
+Retraction Effect: Standard Retraction [Color: RetractionColorArg]
+Lockup Effect: NoneLightning Block Effect: NoneDrag Effect: NoneMelt Effect: NonePower Save: 25% IncrementSpecial Ability 1: Next Phase
+Special Ability 2: Previous Phase
+Special Ability 3: Next Phase
+Special Ability 4: Previous Phase
+
+ */
+Layers<
+  Black,
+  ColorSelect<AltF,TrSelect<Ifon<Int<1>,Int<0>>,TrInstant,TrSmoothFadeX<Int<200>>>,StripesX<Scale<SlowNoise<Int<90>>,Int<4000>,Int<10000>>,Int<-1800>,RgbArg<BASE_COLOR_ARG,Rgb<255,234,0>>,Mix<Int<6000>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,234,0>>>,RgbArg<BASE_COLOR_ARG,Rgb<255,234,0>>,Mix<Int<16000>,Black,RgbArg<BASE_COLOR_ARG,Rgb<255,234,0>>>>,Stripes<15000,-2400,RgbArg<ALT_COLOR_ARG,Rgb<255,2,2>>,Mix<Int<16000>,Black,RgbArg<ALT_COLOR_ARG,Rgb<255,2,2>>>,Stripes<6000,-1800,RgbArg<ALT_COLOR_ARG,Rgb<255,2,2>>,Mix<Int<12000>,Black,RgbArg<ALT_COLOR_ARG,Rgb<255,2,2>>>,RgbArg<ALT_COLOR_ARG,Rgb<255,2,2>>>>>,
+  TransitionEffectL<TrConcat<TrInstant,RgbArg<IGNITION_COLOR_ARG,White>,TrFade<150>>,EFFECT_IGNITION>,
+  InOutTrL<TrWipeX<BendTimePowInvX<Percentage<IntArg<IGNITION_TIME_ARG,150>,20>,Mult<IntArg<IGNITION_OPTION2_ARG,10992>,Int<98304>>>>,TrConcat<TrDelayX<Percentage<RetractionTime<>,80>>,TrWipeInX<BendTimePowX<Percentage<RetractionTime<>,20>,Mult<IntArg<RETRACTION_OPTION2_ARG,10992>,Int<98304>>>>>>,
+  EffectSequence<EFFECT_POWERSAVE,AlphaL<Black,Int<8192>>,AlphaL<Black,Int<16384>>,AlphaL<Black,Int<24576>>,AlphaL<Black,Int<0>>>>>()

@@ -1,0 +1,22 @@
+StylePtr</* copyright Fett263 EnergyWeapon (Quillion / Secondary Blade) OS7 Style
+https://www.fett263.com/fett263-proffieOS7-style-library.html#EnergyWeapon
+OS7.15 v3.217p
+Single Style
+Base Style: Shock Baton
+
+Base Color: BaseColorArg (0)
+
+--Effects Included--
+
+Effect Reaction: HumpFlicker, AltColor2Arg, Type: Emitter, Direction: Normal, Duration: 200, Consecutive Effects to Max: 6
+Effect Reactions: Clash, BlastIgnition Effect: Standard Ignition [Color: IgnitionColorArg]
+PowerUp Effect: Power Flash [Color: IgnitionColorArg]
+Retraction Effect: Standard Retraction [Color: RetractionColorArg]
+Lockup Effect: NoneLightning Block Effect: NoneDrag Effect: NoneMelt Effect: NoneInteractive Blast: Continuing Blasts - Default Level (Uses Style Option 2 for Editing): 500 ms
+Interactive Blast control requires blast.wav files in font. When Blast is triggered blast.wav will play, to deflect blast (blst.wav and visual effect) swing within 500ms of blaster sound ending. Each deflection will be followed by new blaster sound, if no deflection blaster sound will end. Only one style per preset can contain.
+Power Save: 25% Increment */
+Layers<
+  BrownNoiseFlicker<BrownNoiseFlicker<RgbArg<BASE_COLOR_ARG,Rgb<30,60,200>>,Black,300>,Stripes<3000,-4000,Rgb<50,50,75>,Rgb<100,100,150>,Rgb<10,10,15>,Rgb<150,150,225>>,200>,
+  TransitionEffectL<TrConcat<TrInstant,RgbArg<IGNITION_COLOR_ARG,White>,TrFade<150>>,EFFECT_IGNITION>,
+  InOutTrL<TrWipeX<BendTimePowInvX<Percentage<IntArg<IGNITION_TIME_ARG,150>,20>,Mult<IntArg<IGNITION_OPTION2_ARG,10992>,Int<98304>>>>,TrConcat<TrDelayX<Percentage<RetractionTime<>,80>>,TrWipeInX<BendTimePowX<Percentage<RetractionTime<>,20>,Mult<IntArg<RETRACTION_OPTION2_ARG,10992>,Int<98304>>>>>>,
+  EffectSequence<EFFECT_POWERSAVE,AlphaL<Black,Int<8192>>,AlphaL<Black,Int<16384>>,AlphaL<Black,Int<24576>>,AlphaL<Black,Int<0>>>>>()
